@@ -15,7 +15,7 @@ xyUI只是个开始！
 
 ### xyUI一览
 
-tab、slider、tooltip、scrollTop、imgLazyload、placeholder、dialog、posfix、
+tab、slider、tooltip、scrollTop、imgLazyload、placeholder、dialog、posfix、datepicker
 
 表单验证、表情、大学学校选取、大学专业选取、城市级联
 
