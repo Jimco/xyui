@@ -15,10 +15,11 @@ xyUI只是个开始！
 
 ### xyUI一览
 
-tab、slider、tooltip、scrollTop、imgLazyload、placeholder、dialog、posfix、datepicker
+tab、slider、tooltip、msgbox、scrollTop、imgLazyload、placeholder、dialog、posfix、datepicker
 
 表单验证、表情、大学学校选取、大学专业选取、城市级联
 
 ### Version
 
 v0.1 - 2012-12-15
+上传消息提示组件 - 2012-12-23
