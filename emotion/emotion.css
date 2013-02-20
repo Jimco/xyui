@@ -1,0 +1,12 @@
+ul, li, dl, dt, dd{list-style:none;margin:0;padding:0;}
+
+#xyEmotion{position:absolute;top:0;left:0;}
+
+#xyEmotion ul:after{content:'.';display:block;height:0;clear:both;visibility: hidden;}
+#xyEmotion ul{zoom:1;}
+
+#xyEmotion{background:#fff;padding:8px;border:1px #dfe6f6 solid;width:336px;height:150px;}
+#xyEmotion span{float:left;display:none;}
+#xyEmotion ul li{padding:2px;float:left;}
+#xyEmotion ul li img{cursor:pointer;border:1px #fff solid;}
+#xyEmotion ul li img:hover{border:1px #09f solid;}
