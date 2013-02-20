@@ -23,4 +23,7 @@ tab、slider、tooltip、msgbox、scrollTop、imgLazyload、placeholder、dialog
 
 v0.1 - 2012-12-15
 
-上传消息提示组件 - 2012-12-23
+更新消息提示组件 - 2012-12-23
+
+更新Tooltip - 2013-02-20
+
