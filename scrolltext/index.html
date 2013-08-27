@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>js文字滚动插件</title>
+  <style type="text/css">
+    *{margin:0;padding:0;list-style-type:none;}
+    a, img{border:0;vertical-align:middle;}
+    /*公告*/
+    .notice{width:387px;margin:20px auto;height:26px;overflow:hidden;background:url(images/bg.gif) no-repeat;}
+    .noticTipTxt{color:#ff7300;height:22px;line-height:22px;overflow:hidden;margin:0 0 0 40px;}
+    .noticTipTxt li{height:22px;line-height:22px;}
+    .noticTipTxt a{color:#0075E8;font-size:12px;text-decoration:none;}
+    .noticTipTxt a:hover{color:#ff7300;text-decoration:underline;}
+  </style>
+</head>
+
+<body>
+  <div class="notice">
+    <ul id="jsfoot01" class="noticTipTxt">
+      <li><a href="http://www.xiejiancong.com/" target="_blank">js无缝滚动制作js文字无缝滚动和js图片无缝滚动 <img src="images/hot001.gif" width="22" height="11" /></a></li>
+      <li><a href="http://www.xiejiancong.com/" target="_blank">js文字切换特效制作焦点文字带滤镜切换效果</a></li>
+      <li><a href="http://www.xiejiancong.com/" target="_blank">js文字特效制作js文字闪烁与文字变色效果</a></li>
+      <li><a href="http://www.xiejiancong.com/" target="_blank">js文字滚动制作js scroll单排文字滚动向上间隔滚动</a></li>
+    </ul>
+  </div>
+
+  <div class="notice">
+    <ul id="jsfoot02" class="noticTipTxt">
+      <li><a href="http://www.xiejiancong.com/" target="_blank">js文字滚动制作js scroll单排文字滚动向上间隔滚动</a></li>
+      <li><a href="http://www.xiejiancong.com/" target="_blank">js文字特效制作js文字闪烁与文字变色效果</a></li>
+      <li><a href="http://www.xiejiancong.com/" target="_blank">js文字切换特效制作焦点文字带滤镜切换效果</a></li>
+      <li><a href="http://www.xiejiancong.com/" target="_blank">js无缝滚动制作js文字无缝滚动和js图片无缝滚动 <img src="images/hot001.gif" width="22" height="11" /></a></li>
+    </ul>
+  </div>
+
+  <script type="text/javascript" src="scrolltext.js"></script>
+  <script type="text/javascript">
+    // 演示一
+    if(document.getElementById("jsfoot01")){   
+      var scrollup1 = new ScrollText({
+        elemId: 'jsfoot01',   // 元素id
+        lineHeight: 22,       // 单排文字滚动的高度
+        amount: 1,            // 注意:子模块(lineHeight)一定要能整除amount.
+        delay: 20,            // 延时   
+        direction: 'down',    // 文字向下滚动
+        autoStart: true       // 自动执行
+      });
+    }
+
+    // 演示二
+    if(document.getElementById("jsfoot02")){
+      var scrollup2 = new ScrollText({
+        elemId: 'jsfoot02',   // 元素id
+        lineHeight: 22,       // 单排文字滚动的高度
+        amount: 1,            // 注意:子模块(lineHeight)一定要能整除amount.
+        delay: 20,            // 延时   
+        direction: 'up'       // 文字向上滚动
+      });
+      scrollup2.start();
+    }
+  </script> 
+
+</body>
+</html>
