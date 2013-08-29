@@ -36,7 +36,7 @@
     }
   };
 
-  // 将一个或多个对象的属性(包括原型链中的属性), 复制到obj对象，吐过存在同名属性则覆盖
+  // 将一个或多个对象的属性(包括原型链中的属性), 复制到obj对象，如果存在同名属性则覆盖
   function extend(obj){
     var slice = arrProto.slice;
     each(slice.call(arguments, 1), function(source){
