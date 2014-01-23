@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>video2txt：基于canvas的视频转字符动画工具</title>
+  <style type="text/css">
+    * {margin: 0;padding: 0;}
+    body {font-size: 12px; margin: 10px; font-family: simsun; background: #fff;}
+    .title h3{color:#000; border-bottom:1px solid #ccc; line-height:57px;margin:0 0 10px;}
+    p { height: 12px;}
+    p.ts { margin: 10px 0 0 0; width: 500px; float: left;}
+    span {width: 12px;}
+    #cv, #txt,#vi {float: left;overflow: hidden;}
+    #cv { margin-right: 5px; display: none;}
+    .bt{ height: 37px; }
+    form, input {width: 200px;height: 27px;}
+    form {position: relative;float: left;margin: 0 10px 0 0;}
+    #up-button{position: absolute;right: 0;top: 0;cursor: pointer;opacity: 0;filter: alpha(opacity=0);utline: none;}
+  </style>
+</head>
+<body>
+  <div class="title">
+    <h3>video2txt：基于canvas的视频转字符动画工具</h3>
+  </div>
+  <div class="bt">
+    <form id="uf">
+      <input type="file" name="file" id="up-button"/>
+      <input type="button" id="button" value="请选择视频文件"/>
+    </form>
+    <p class="ts">请选择MP4/ogg/WebM等格式的视频文件(firefox不支持MP4)</p>
+  </div>
+
+  <canvas id="cv">fuck ie</canvas>
+  <video src="" width="600" height="480" controls autoplay id="vi">
+      fuck ie
+  </video>
+  <div id="txt"></div>
+  <script src="script/video2txt.js"></script>
+</body>
+</html>
