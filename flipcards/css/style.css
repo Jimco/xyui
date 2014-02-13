@@ -1,0 +1,88 @@
+body {
+  color: white;
+  font-family: 'Sans';
+  font-size: xx-large;
+  text-align: center;
+  background-color: black;
+}
+
+.fixed {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+  filter: alpha(opacity=80);
+  opacity: 0.8;
+  background: blue;
+}
+
+#game {
+  margin:auto;
+  height: 100%;
+  width: 860px;
+  border: 1em solid white;
+  padding: 0.5em;
+  border-radius: 2em;
+}
+
+#game li {
+  padding: 2px;
+  list-style-type: none;
+  display: inline-block;
+}
+
+.container {
+  position: relative;
+  -webkit-perspective: 800px;
+  -moz-perspective: 800px;
+  perspective: 800px;
+}
+
+.container,.fixed,.card .back,.card .front {
+  height: 125px;
+  width: 125px;
+}
+
+.card {
+  position: relative;
+
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+
+  -webkit-transition: -webkit-transform 1s;
+  -moz-transition: -moz-transform 1s;
+  -o-transition: -o-transform 1s;
+  -ms-transition: -ms-transform 1s;
+  transition: transform 1s;
+}
+
+.card .back,.card .front {
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.card .front {
+  cursor: pointer;
+  background: red;
+}
+
+.card .back {
+  background: blue;
+
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+
+.card.flipped {
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
