@@ -19,11 +19,11 @@ body {
   width: 860px;
   border: 1em solid white;
   padding: 0.5em;
-  border-radius: 2em;
 }
 
 #game li {
   padding: 2px;
+  margin-right: 8px;
   list-style-type: none;
   display: inline-block;
 }

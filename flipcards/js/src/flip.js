@@ -5,6 +5,7 @@
 define(function(require, exports, module){
   var board = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
     , uncovered = 0
+    , ready = true
     , listener = null
     , lastCard = [];
 
@@ -25,6 +26,11 @@ define(function(require, exports, module){
     return data ? fn( data ) : fn;
   }
 
+  function cardTpl(tpl, cardName){
+    var template = tpl.format(cardName, cardName);
+    return template;
+  }
+
   function shuffleArr(arr){
     for(var i = arr.length - 1; i > 0; i--){
       var j = Math.floor( Math.random() * (i + 1) )
@@ -40,12 +46,12 @@ define(function(require, exports, module){
   function makeCards(tpl, context){
     board = shuffleArr(board);
     for(var i = 0, l = board.length; i < l; i++){
-      context.innerHTML += template(tpl, board[i]);
+      context.innerHTML += cardTpl(tpl, board[i]);
     }
   }
 
   function Game(){
-    var context = document.getElementById('cardSet')
+    var context = document.getElementById('cardsSet')
       , tpl = require('./card_tpl');
 
     makeCards(tpl.cardTpl, context);
@@ -55,7 +61,7 @@ define(function(require, exports, module){
 
   function setFixed(card){
     card.className = 'fixed';
-    card.removeChild(card.childNodes[1]);
+    card.removeChild(card.childNodes[0]);
     card.onclick = null;
   }
 
@@ -76,7 +82,7 @@ define(function(require, exports, module){
 
   Game.flipCard = function(card){
     if(lastCard !== card && uncovered < 2 && ready){
-      card.lastCard.toggle('flipped');
+      card.classList.toggle('flipped');
       uncovered++;
       if(uncovered === 2){
         ready = false;
@@ -87,6 +93,13 @@ define(function(require, exports, module){
         lastCard = card;
       }
     }
+  }
+
+  String.prototype.format = function(){
+    var args = arguments;
+    return this.replace(/{(\d+)}/g, function(match, num){
+      return typeof args[num] !== 'undefined' ? args[num] : match;
+    });
   }
 
   module.exports = Game;

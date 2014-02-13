@@ -7,20 +7,20 @@
 
 </head>
 <body>
-  <div class="main-wrap">
-    <ul id="cardSet"></ul>
+  <div class="main-wrap" id="game">
+    <ul id="cardsSet"></ul>
   </div>
 
-  <script type="text/template" id="cardTpl">
-    <li>
-      <div class="container">
-        <div class="card" id="card {0}" onclick="Game.flipCard(this)">
-          <div class="front"><img alt="front" src="Assets/texture.jpg"></div>
-          <div class="back"><img alt="back" src="Assets/c{1}.gif"></div>
-        </div>
-      </div>
-    </li>
+  
+  <script type="text/javascript" src="js/sea.js"></script>
+  <!-- <script type="text/javascript" src="js/src/flip.js"></script> -->
+  <script>
+    // seajs.config({
+    //   alias: {
+    //     'main': location.search.indexOf('debug') > -1 ? 'src/main' : 'src/main'
+    //   }
+    // });
+    seajs.use('src/main');
   </script>
-  <script type="text/javascript" src="js/flip.js"></script>
 </body>
 </html>
