@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>高度100%页面自适应布局</title>
+  <style>
+    *{margin:0;padding:0;}
+    p{margin:0 0 15px;}
+    
+    /* Layout */
+    body{height:100%;}
+    .header, .footer{position:absolute;left:0;right:0;height:60px;overflow:hidden;background-color:#DBEDF6;}
+    .header{top:0;}
+    .footer{bottom:0;}
+    .main-wrap{position:absolute;left:200px;right:0;top:60px;bottom:60px;overflow:auto;}
+    .left-wrap{position:absolute;top:60px;bottom:60px;left:0;width:200px;overflow:hidden;background-color:#f3f3f3;}
+
+    /* Main */
+    .main-cont{margin:15px;padding:15px;border:1px dashed #aaa;height:1000px;}
+  </style>
+  <!--[if IE ]>
+  <style type="text/css">
+    *html{padding:60px 0;overflow:hidden} 
+    *html body{padding:60 0;padd\ing:0;}
+    html, body{overflow:hidden;background:#f3f3f3;}
+    *html .main-wrap{height:100%;position:relative;margin-left:150px;left:0;top:0;right:0;bottom:0;}
+
+    *html .left-wrap{height:100%;float:left;top:0;bottom:0;position:relative;overflow:auto;}
+    *html .footer{bottom:-1px;}
+  </style>
+  <![endif]-->
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      Header
+    </div>
+    <div class="main-wrap">
+      <div class="main-cont">
+        Main
+      </div>
+    </div>
+    <div class="left-wrap">
+      Left
+    </div>
+    <div class="footer">
+      Footer
+    </div>
+  </div>
+</body>
+</html>
