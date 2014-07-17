@@ -68,21 +68,22 @@
 
 /* 禁用按钮 */
 .btn-disabled {
+    color:#fff;
+    background:#e3e3e3;
     cursor: default;
-    color: #ccc;
 }
 
 .btn-disabled:hover,
 .btn-disabled:focus {
-    color: #ccc;
-    background-color: #f3f3f3;
+    color:#fff;
+    background:#e3e3e3;
     cursor: default;
 }
 
 .btn-disabled.active,
 .btn-disabled:active {
-    color: #ccc;
-    background: #f3f3f3;
+    color:#fff;
+    background:#e3e3e3;
     cursor: default;
 }
 
