@@ -1,3 +1,17 @@
+/* Common ********************/
+.mt10 { margin-bottom: 10px; }
+.mt15 { margin-bottom: 15px; }
+.mt20 { margin-bottom: 20px; }
+.mb10 { margin-bottom: 10px; }
+.mb15 { margin-bottom: 15px; }
+.mb20 { margin-bottom: 20px; }
+.ml10 { margin-bottom: 10px; }
+.ml15 { margin-bottom: 15px; }
+.ml20 { margin-bottom: 20px; }
+.mr10 { margin-bottom: 10px; }
+.mr15 { margin-bottom: 15px; }
+.mr20 { margin-bottom: 20px; }
+
 /* Button ********************/
 .btn { 
     display: inline-block;
