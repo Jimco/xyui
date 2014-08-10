@@ -1,4 +1,56 @@
 /* Common ********************/
+/* display */
+.dn { display: none; }
+.di { display: inline; }
+.db { display: block; }
+.dib { display: inline-block; }
+/* float */
+.fl { float: left; }
+.fr { float: right; }
+/* letter-spacing */
+.lt-1 { letter-spacing: -1px; }
+.lt0 { letter-spacing: 0; }
+.lt1 { letter-spacing: 1px; }
+/* white-space */
+.nowrap { white-space: nowrap; }
+/* word-wrap */
+.bk { word-wrap: break-word; }
+/* vertical-align */
+.vm { vertical-align: middle; }
+.vtb { vertical-align: text-bottom; }
+.vb { vertical-align: bottom; }
+.vt { vertical-align: top; }
+.vn { vertical-align: -2px; }
+/* text-align */
+.tc { text-align: center; }
+.tr { text-align: right; }
+.tl { text-align: left; }
+.tj { text-align: justify; }
+/* background-color name rule:  bg - (key word/Hex color) |-> All colors are safe color */
+.bgwh { background-color: #fff; }
+.bgfb { background-color: #fbfbfb; }
+.bgf5 { background-color: #f5f5f5; }
+.bgf0 { background-color: #f0f0f0; }
+.bgeb { background-color: #ebebeb; }
+.bge0 { background-color: #e0e0e0; }
+/* safe color */
+.g0 { color: #000; }
+.g3 { color: #333; }
+.g6 { color: #666; }
+.g9 { color: #999; }
+.gc { color: #ccc; }
+.wh { color: white; }
+/* font-size */
+.f0 { font-size: 0; }
+.f10 { font-size: 10px; }
+.f12 { font-size: 12px; }
+.f13 { font-size: 13px; }
+.f14 { font-size: 14px; }
+.f16 { font-size: 16px; }
+.f18 { font-size: 18px; }
+.f20 { font-size: 20px; }
+.f24 { font-size: 24px; }
+/* margin */
 .mt10 { margin-top: 10px; }
 .mt15 { margin-top: 15px; }
 .mt20 { margin-top: 20px; }
@@ -11,6 +63,30 @@
 .mr10 { margin-right: 10px; }
 .mr15 { margin-right: 15px; }
 .mr20 { margin-right: 20px; }
+
+/* 块状元素水平居中 */
+.auto { margin-left: auto; margin-right: auto; }
+/* 清除浮 动*/
+.fix { *zoom: 1; }
+.fix:after { display: table; content: ''; clear: both; }
+/* 基于display: table-cell的自适应布局 */
+.cell { display: table-cell; *display: inline-block; width: 2000px; *width: auto; }
+/* 双栏自适应cell部分连续英文字符换行 */
+.cell_bk { display: table; width: 100%; table-layout: fixed; word-wrap: break-word; }
+/* 单行文字溢出虚点显 示*/
+.ell { text-overflow: ellipsis; white-space: nowrap; overflow: hidden; }
+/* css3过渡动画效果 */
+.trans { 
+    -webkit-transition: all 0.3s;    
+            transition: all 0.3s;
+}
+/* 大小不定元素垂直居中 */
+.dib_vm { display: inline-block; width: 0; height: 100%; vertical-align: middle; }
+/* 无框文本框文本域 */
+.bd_none { border: 0; outline: none; }
+/* 绝对定位隐藏 */
+.abs_out { position: absolute; left: -999em; top: -999em; }
+.abs_clip { position: absolute; clip: rect(0 0 0 0); }
 
 /* Button ********************/
 .btn { 
@@ -82,23 +158,14 @@
 
 /* 禁用按钮 */
 .btn-disabled {
-    color:#fff;
-    background:#e3e3e3;
-    cursor: default;
+    color:#fff!important;
+    background:#e3e3e3!important;
+    cursor: default!important;
 }
 
 .btn-disabled:hover,
 .btn-disabled:focus {
-    color:#fff;
-    background:#e3e3e3;
-    cursor: default;
-}
-
-.btn-disabled.active,
-.btn-disabled:active {
-    color:#fff;
-    background:#e3e3e3;
-    cursor: default;
+    text-decoration: none!important;
 }
 
 /* 不同尺寸按钮 */
