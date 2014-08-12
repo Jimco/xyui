@@ -7,6 +7,9 @@
 /* float */
 .fl { float: left; }
 .fr { float: right; }
+/* position */
+.rel { position: relative; }
+.abs { position: absolute; }
 /* letter-spacing */
 .lt-1 { letter-spacing: -1px; }
 .lt0 { letter-spacing: 0; }
