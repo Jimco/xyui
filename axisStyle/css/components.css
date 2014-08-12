@@ -90,6 +90,15 @@
 /* 绝对定位隐藏 */
 .abs_out { position: absolute; left: -999em; top: -999em; }
 .abs_clip { position: absolute; clip: rect(0 0 0 0); }
+/* 三栏布局 */
+.grid-c3 {
+    
+}
+/* 两栏布局 */
+.grid-c2 {
+    
+}
+
 
 /* Button ********************/
 .btn { 
