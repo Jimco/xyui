@@ -333,7 +333,7 @@
 }
 
 /* Form ********************/
-input {
+.input {
     display: inline-block;
     width: 160px;
     padding: 4px;
