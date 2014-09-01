@@ -54,6 +54,12 @@
 .f20 { font-size: 20px; }
 .f24 { font-size: 24px; }
 /* margin */
+.mg10 { margin: 10px; }
+.mg15 { margin: 15px; }
+.mg20 { margin: 20px; }
+.mg25 { margin: 25px; }
+.mg30 { margin: 30px; }
+.mg35 { margin: 35px; }
 .mt10 { margin-top: 10px; }
 .mt15 { margin-top: 15px; }
 .mt20 { margin-top: 20px; }
@@ -79,6 +85,12 @@
 .mr30 { margin-right: 30px; }
 .mr35 { margin-right: 35px; }
 /* padding */
+.pd10 { padding: 10px; }
+.pd15 { padding: 15px; }
+.pd20 { padding: 20px; }
+.pd25 { padding: 25px; }
+.pd30 { padding: 30px; }
+.pd35 { padding: 35px; }
 .pt10 { padding-top: 10px; }
 .pt15 { padding-top: 15px; }
 .pt20 { padding-top: 20px; }
@@ -135,7 +147,6 @@
 .grid-c2 {
     
 }
-
 
 /* Button ********************/
 .btn { 
@@ -402,7 +413,7 @@
 }
 
 /* 文本区 */
-textarea {
+.textarea {
     display: inline-block;
     padding: 4px;
     border: 1px #e3e3e3 solid;
@@ -418,7 +429,7 @@ textarea {
 }
 
 /* 选择列表 */
-select {
+.select {
     display: inline-block;
     height: 30px;
     padding: 4px 2px;
@@ -440,7 +451,7 @@ select {
 }
 
 /* 单选 */
-input.radio {
+.input.radio {
     width: inherit;
     vertical-align: -2px;
     _vertical-align: -3px;
@@ -450,12 +461,12 @@ input.radio {
     display: inline-block;
 }
 
-input.radio.radio-first {
+.input.radio.radio-first {
     margin-left: 0;
 }
 
 /* 多选 */
-input.check {
+.input.check {
     display: inline-block;
     width: inherit;
     margin-right: 3px;
@@ -465,7 +476,7 @@ input.check {
     _vertical-align: -3px;
 }
 
-input.check.check-first {
+.input.check.check-first {
     margin-left: 0;
 }
 
@@ -492,7 +503,7 @@ input.check.check-first {
 
 
 /* Table ********************/
-table {
+.table {
     width: 100%;
     border-collapse: collapse;
     border-spacing: 0;
@@ -596,14 +607,14 @@ table {
     background-color: #f5f5f5;
 }
 
-table col[class*="col-"] {
+.table col[class*="col-"] {
     position: static;
     float: none;
     display: table-column;
 }
 
-table td[class*="col-"],
-table th[class*="col-"] {
+.table td[class*="col-"],
+.table th[class*="col-"] {
     float: none;
     display: table-cell;
 }
